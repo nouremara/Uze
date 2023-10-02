@@ -2,8 +2,8 @@
 
 #main einmal ausklammern und vergessen fürs erste
 
-from kafka import consumer
-from Sensors.GasSensor import read_gas_sensor
+from MainCode.street_sense_client.kafka_interface import consumer
+from MainCode.street_sense_client.sensors.GasSensor import read_gas_sensor
 import threading
 
 if __name__ == "__main__":
