@@ -1,7 +1,6 @@
 version: '3.1'
 
 services:
-
   postgres:
     image: postgres:latest
     container_name: my_postgres
@@ -12,7 +11,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data #kommt noch der pfad rein
+      - postgres_data:/var/lib/postgresql/data
 
   my_python_app:
     build: ./my_python_app
@@ -30,3 +29,4 @@ services:
 
 volumes:
   postgres_data:
+

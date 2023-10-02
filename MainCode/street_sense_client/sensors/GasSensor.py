@@ -2,7 +2,7 @@
 import PCF8591 as ADC
 import RPi.GPIO as GPIO
 import time
-from kafka import producer
+from confluent_kafka import serializing_producer
 
 
 class GasSensor:
